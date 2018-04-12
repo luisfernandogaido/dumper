@@ -6,6 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"path/filepath"
+	"time"
+	"bytes"
 )
 
 func Ini(porta string) {
@@ -68,6 +71,14 @@ func get(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusUnauthorized)
 		return
 	}
+	file := r.URL.Query().Get("file")
+	data, err := ioutil.ReadFile(filepath.Join("./static", file))
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusUnauthorized)
+		return
+	}
+	w.Header().Set("Content-Disposition", "attachment; filename=" + file)
+	http.ServeContent(w,r, filepath.Join("./static", file), time.Now(), bytes.NewReader(data))
 }
 
 func printJson(w http.ResponseWriter, data interface{}) error {
