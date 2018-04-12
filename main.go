@@ -13,5 +13,5 @@ func main() {
 	app.Ini(":4001")
 }
 
-//cartao rose
+//http://localhost:4001/get?token=MMwwQvpYsfg9Xjse4VDqvjfm&dump=atlas-20180412-142824.sql
 
