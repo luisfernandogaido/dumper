@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-04-13T02:48:44.494Z",
+	"__export_date": "2018-04-13T03:49:56.573Z",
 	"__export_source": "insomnia.desktop.app:v5.15.0",
 	"resources": [
 		{
@@ -156,11 +156,11 @@
 			"color": null,
 			"created": 1523576861699,
 			"data": {
-				"token": "MMwwQvpYsfg9Xjse4VDqvjfm",
+				"token": "VjtMvfPVV99fxJ7mqMNGEH29",
 				"urlbase": "http://localhost:4001"
 			},
 			"isPrivate": false,
-			"modified": 1523580228627,
+			"modified": 1523591377159,
 			"name": "dev",
 			"parentId": "env_b5e32d99829546ce804e73f08d306b23",
 			"_type": "environment"
@@ -170,11 +170,11 @@
 			"color": null,
 			"created": 1523576869339,
 			"data": {
-				"token": "MMwwQvpYsfg9Xjse4VDqvjfm",
+				"token": "VjtMvfPVV99fxJ7mqMNGEH29",
 				"urlbase": "https://dumper.profinanc.com.br"
 			},
 			"isPrivate": false,
-			"modified": 1523585887805,
+			"modified": 1523591379746,
 			"name": "pro",
 			"parentId": "env_b5e32d99829546ce804e73f08d306b23",
 			"_type": "environment"
