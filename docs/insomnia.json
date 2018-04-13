@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-04-13T03:49:56.573Z",
+	"__export_date": "2018-04-13T12:51:02.397Z",
 	"__export_source": "insomnia.desktop.app:v5.15.0",
 	"resources": [
 		{
@@ -73,7 +73,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1523281695443,
 			"method": "GET",
-			"modified": 1523585953744,
+			"modified": 1523616650535,
 			"name": "dump",
 			"parameters": [
 				{
@@ -100,7 +100,7 @@
 				{
 					"id": "pair_3628cad886454cc5bd759d136288e618",
 					"name": "db",
-					"value": "grupo_atlas"
+					"value": "ect"
 				}
 			],
 			"parentId": "wrk_42b159de36ae4e758839e5a29220bd1c",
@@ -122,7 +122,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1523132445376.5,
 			"method": "GET",
-			"modified": 1523586007187,
+			"modified": 1523621283997,
 			"name": "get",
 			"parameters": [
 				{
@@ -134,12 +134,12 @@
 					"disabled": false,
 					"id": "pair_e9b37797611e42589ed244e3120715a1",
 					"name": "file",
-					"value": "grupo_atlas-20180412-231828.sql"
+					"value": "ect-20180413-090430.zip"
 				},
 				{
 					"id": "pair_a11b358fbebc4093872ea51febde7ea0",
-					"name": "",
-					"value": ""
+					"name": "delete",
+					"value": "true"
 				}
 			],
 			"parentId": "wrk_42b159de36ae4e758839e5a29220bd1c",
@@ -149,6 +149,60 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ urlbase  }}/get",
+			"_type": "request"
+		},
+		{
+			"_id": "req_457d39f5bf3e43f7ac2841bfbeb83253",
+			"authentication": {},
+			"body": {},
+			"created": 1523622164381,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1523207070409.75,
+			"method": "GET",
+			"modified": 1523622177746,
+			"name": "dumpget",
+			"parameters": [
+				{
+					"id": "pair_e4a8f52a751c480f97d9d84009e8dbf8",
+					"name": "token",
+					"value": "{{ token  }}"
+				},
+				{
+					"disabled": false,
+					"id": "pair_e9b37797611e42589ed244e3120715a1",
+					"name": "host",
+					"value": "localhost"
+				},
+				{
+					"id": "pair_9def581dc3d64ba1b52117385b670532",
+					"name": "user",
+					"value": "root"
+				},
+				{
+					"id": "pair_8b6e34ef37fd4aedbdbce6b4db83dc88",
+					"name": "pass",
+					"value": "Semaver13"
+				},
+				{
+					"id": "pair_3628cad886454cc5bd759d136288e618",
+					"name": "db",
+					"value": "ect"
+				},
+				{
+					"id": "pair_3f9cb4639ea44b37a7d3399fb87c5fa8",
+					"name": "delete",
+					"value": "true"
+				}
+			],
+			"parentId": "wrk_42b159de36ae4e758839e5a29220bd1c",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ urlbase  }}/dumpget",
 			"_type": "request"
 		},
 		{
