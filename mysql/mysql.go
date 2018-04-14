@@ -16,11 +16,11 @@ func Dump(host, user, pass, db, dir string) (string, error) {
 		fmt.Sprintf("-u%v", user),
 		fmt.Sprintf("-p%v", pass),
 		"--routines",
+		"--databases",
 		db,
 		fmt.Sprintf("--result-file=%v", fullPath),
 	)
-	err := cmd.Run()
-	if err != nil {
+	if err := cmd.Run(); err != nil {
 		return "", err
 	}
 	return fileName, nil
